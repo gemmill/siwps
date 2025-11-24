@@ -65,7 +65,7 @@
 
 	$total_pages = $connected->max_num_pages;
 	if ($total_pages > 1){
-        $page = max(1, $_GET['pp']);
+		$page = max(1, isset($_GET['pp']) ? intval($_GET['pp']) : 1);
 		
 		echo "Page " . $page." of ".$total_pages;
 

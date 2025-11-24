@@ -12,11 +12,29 @@ $color_size = "large";
 			
  ?>
 
+<?php
+		$alt_text = '';
+		if (!empty($the_image['title'])) {
+			$alt_text = $the_image['title'];
+		} elseif (!empty($the_image['caption'])) {
+			$alt_text = $the_image['caption'];
+		} else {
+			$alt_text = get_the_title();
+		}
+?>
 <article id="post-<?php the_ID(); ?>" class="event list">
 	<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" rel="bookmark">
 		<div class="thumb">
+		
 
-			<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="<?php echo $the_image['sizes'][$color_size] ?>" width="<?php echo $the_image['sizes'][$color_size.'-width'] ?>"  height="<?php echo $the_image['sizes'][$color_size.'-height'] ?>">
+	?>
+	<img 
+		src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" 
+		data-src="<?php echo $the_image['sizes'][$color_size] ?>" 
+		width="<?php echo $the_image['sizes'][$color_size.'-width'] ?>"  
+		height="<?php echo $the_image['sizes'][$color_size.'-height'] ?>" 
+		alt="<?php echo esc_attr($alt_text); ?>"
+	>
 
 			<div class="datebox">
 				<div class="the_date">

@@ -9,7 +9,7 @@
 <div class="single_header">
 
 
-<?php if (!$_GET["archive"]):?>
+<?php if (!isset($_GET["archive"])):?>
 	<div class="header_container">
 	<h2 class="section ">People</h2>
 	</div>

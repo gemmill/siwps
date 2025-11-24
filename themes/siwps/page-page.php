@@ -16,11 +16,11 @@
 	</div>
 
 	<div class="image_container landscape">
-		<div>
-		<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data=src="<?php echo $the_image['sizes'][$the_size] ?>" width="<?php echo $the_image['sizes'][$the_size.'-width'] ?>"  height="<?php echo $the_image['sizes'][$the_size.'-height'] ?>" >
-
-
-		</div>
+		<?php if (isset($the_image)) : ?>
+			<div>
+				<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="<?php echo $the_image['sizes'][$the_size]; ?>" width="<?php echo $the_image['sizes'][$the_size.'-width']; ?>" height="<?php echo $the_image['sizes'][$the_size.'-height']; ?>" />
+			</div>
+		<?php endif; ?>
 	</div>
 
 </div>

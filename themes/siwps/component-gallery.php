@@ -30,8 +30,8 @@ foreach($images as $i):
 		
 		<?php if ($i['caption']): ?>
 		<div class="slickchild" >
-		  <img data-lazy="<?php echo $the_image?>" width="<?php echo $the_image_width ?>" height="<?php echo  $the_image_height ?>">
-		  <div class="caption"><?php echo $i['caption'] ?></div>
+		<img data-lazy="<?php echo $the_image ?>" width="<?php echo $the_image_width ?>" height="<?php echo $the_image_height ?>" alt="<?php echo esc_attr($i['caption']) ?>">
+		<div class="caption"><?php echo $i['caption'] ?></div>
 		</div>
 		<?php endif; ?>
 		<?php 

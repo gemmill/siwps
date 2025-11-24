@@ -1,11 +1,12 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
    <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>"> 
+<meta http-equiv="Content-Language" content="en-US">
   <?php wp_head(); ?>
  </head>
 
@@ -13,9 +14,9 @@
   <!--[if lte IE 9]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
-<div id="logo">
-<a href="/"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" width="495" height="auto"></a>
-</div>
+<h1 id="logo">
+<a href="/"><img src="<?php echo get_template_directory_uri();  ?>/img/logo.png" width="495" height="auto" alt="Arnold A. Saltzman Institute of War and Peace Studies"></a>
+</h1>
 
 <div id="navsticker">
 <nav id="nav">
@@ -27,12 +28,15 @@
 			<div id="search-inner">
 
 			<form role="search" method="get" id="searchform" class="searchform" action="<?php echo get_site_url(); ?>">
+				<label for="s" class="screen-reader-text">Search for:</label>
 				<div class="search-input">
 					
 					<input type="text" value="" name="s" id="s" placeholder="Search..." required="required" autocomplete="off">
 					
 				</div>
-				<button>&nbsp;</button>
+				<button>
+					<img src="<?php echo get_template_directory_uri(); ?>/img/mag.png" width="22" height="22" alt="Search">
+				</button>
 			</form>
 			</div>
 
@@ -43,7 +47,9 @@
 	<?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
 	
 </nav>
-<a href="#" id="navmobiletoggle"></a>
+<button id="navmobiletoggle">
+	Menu
+</button>
 
 </div>
 <div id="contents">

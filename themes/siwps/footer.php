@@ -6,10 +6,10 @@
 
 
 	<div class="colophon">
-		<a href="https://twitter.com/siwpscolumbia"><img src="<?php echo get_template_directory_uri(); ?>/img/twitter.svg" width="20" height="auto"></a>
-		<a href="facebook.com/ColumbiaSIWPS"><img src="<?php echo get_template_directory_uri(); ?>/img/facebook.svg" width="20" height="auto"></a>	
-		<a href="https://www.linkedin.com/company/saltzman-institute-of-war-and-peace-studies/"><img src="<?php echo get_template_directory_uri(); ?>/img/linkedin.svg" width="20" height="auto"></a>	
-		<a href="https://instagram.com/siwpscolumbia"><img src="<?php echo get_template_directory_uri(); ?>/img/instagram.svg" width="20" height="auto"></a>	
+		<a href="https://twitter.com/siwpscolumbia"><img src="<?php echo get_template_directory_uri(); ?>/img/twitter.svg" width="20" height="auto" alt="SIWPS Twitter"></a>
+		<a href="facebook.com/ColumbiaSIWPS"><img src="<?php echo get_template_directory_uri(); ?>/img/facebook.svg" width="20" height="auto" alt="SIWPS Facebook"></a>	
+		<a href="https://www.linkedin.com/company/saltzman-institute-of-war-and-peace-studies/"><img src="<?php echo get_template_directory_uri(); ?>/img/linkedin.svg" width="20" height="auto" alt="SIWPS LinkedIn"></a>	
+		<a href="https://instagram.com/siwpscolumbia"><img src="<?php echo get_template_directory_uri(); ?>/img/instagram.svg" width="20" height="auto" alt="SIWPS Instagram"></a>	
 
 		<a href="/privacy-policy">Privacy Policy</a>
 		<a href="/contact-us">Contact Us</a>
