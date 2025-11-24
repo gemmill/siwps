@@ -1,0 +1,147 @@
+section.events {
+  @include clearfix();
+}
+
+
+.events_home {
+  .event {
+    &:nth-child(n+4) {
+      display:none;
+      @media (min-width: $screen-lg-min) {
+        display:block;
+      }
+    }
+  }
+
+}
+
+.event {
+  position: relative;
+
+  &.list {
+    @include make-sm-column(6);
+    @include make-md-column(4);
+    @include make-lg-column(3);
+
+    .items & {
+      @include make-sm-column(12);
+      @include make-md-column(12);
+      @include make-lg-column(12);
+      padding:0;
+    }
+
+    @media (min-width: $screen-md-min) {
+      &:nth-child(3n + 1) {
+        clear: left;
+      }
+    }
+    @media (min-width: $screen-lg-min) {
+      &:nth-child(3n + 1) {
+        clear: none;
+      }
+      &:nth-child(4n + 1) {
+        clear: left;
+      }
+    }
+
+    a {
+      border-radius: 0.5em;
+      display: block;
+      margin-left: -$grid-gutter-width/2;
+      margin-right: -$grid-gutter-width/2;
+      margin-top: 0;
+      margin-bottom: 0;
+      padding: $grid-gutter-width/2;
+      text-decoration: none;
+      transition: background-color 0.75s;
+      &:hover {
+        background-color: hsl(60, 17%, 95%);
+      }
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      margin: 0.5em 0;
+      line-height: 1.1;
+      font-weight: 300;
+      clear:both;
+    }
+  }
+
+  .date {
+    float:left;
+    padding:.5em 0;
+  }
+
+  .location {
+    float:left;
+  }
+
+  .datebox {
+    font-weight: 300;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    color: #fff; 
+
+    font-family: $sans;
+    margin-bottom:-.5rem;
+  }
+
+  .the_date {
+    text-transform: uppercase;
+    background: #8e0f56;
+    padding: 0.25em;
+    float: left;
+    clear: both;
+    font-weight: 400;
+    color:#fff;
+    font-size: .85rem;
+    margin-bottom:.5rem;
+    &.header {
+      font-size: inherit;;
+    }
+  }
+
+  .thumb {
+    width: 100%;
+    padding-top: 100%;
+    background: #dedede;
+    position: relative;
+
+    img {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+
+      &.opaque {
+        /* display:none; */
+        display: block;
+      }
+    }
+  }
+
+  &.related {
+    h3 { font-size: 1em;}
+    a {
+      padding: $grid-gutter-width/4;
+      margin-left: -$grid-gutter-width/4;
+      margin-right: -$grid-gutter-width/4;
+    }
+    h2 {
+      font-size:1rem;
+    }
+    .the_date {
+      font-size:.85rem;
+    }
+  }
+}
+
+
+.speakers {
+  margin-top:.5em;
+}

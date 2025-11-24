@@ -1,0 +1,9 @@
+@keyframes fade-in {
+    from {transform: translateY(2rem)}
+    to {transform: translateY(0)}
+}
+
+
+.list.fade-in-element {
+  animation: fade-in .75s;
+}

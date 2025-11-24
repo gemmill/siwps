@@ -1,0 +1,56 @@
+
+.pageitem {
+	@include make-xs-column (12);
+	@include make-md-column (6);
+	@include make-lg-column (4);
+	@include clearfix();
+	
+	font-family: $serif;
+	
+	@media (min-width: $screen-md-min ) {
+		&:nth-child(2n+1) {
+			 clear:left;
+		}
+	}
+		
+
+
+@media (min-width: $screen-lg-min ) {
+
+	&:nth-child(2n+1) {
+		clear:none;
+   }
+
+	&:nth-child(3n+1) {
+		 clear:left;
+	}
+}
+	
+
+	
+	h3 {
+		font-size:1rem;
+		margin:0;
+		font-family: $sans;
+		font-weight:300;
+		font-size:1.2rem;
+	}
+
+	a {
+
+		border-radius: 0.5em;
+		display: block;
+		margin-left: -$grid-gutter-width/2;
+		margin-right: -$grid-gutter-width/2;
+		margin-top: 0;
+		margin-bottom: 0;
+		padding: $grid-gutter-width/2;
+		text-decoration: none;
+		transition: background-color 0.75s;
+		&:hover {
+		  background-color: hsl(60, 17%, 95%);
+		}
+	}
+	
+
+}

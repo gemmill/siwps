@@ -1,0 +1,88 @@
+.hero-height {
+	height:40vh;
+
+}
+.slick {
+	@extend .hero-height;
+	z-index:0;
+	
+}
+
+.slick-slide {
+	@extend .hero-height;
+
+	background:#000;
+	width:100vw;
+	@media (min-width: $screen-md-min) and (orientation: landscape) {
+		width:50vw;
+	}
+
+	@media (max-height: 900px) and (orientation: landscape) {
+		width:30vw;
+	}
+
+
+	@media (orientation: portrait) {
+		width:75vw;
+	}
+
+}
+
+.slickchild {
+
+	width:100%;
+position: relative;
+	transition:opacity .5s;
+
+
+	@extend .hero-height;
+
+	img {
+		width:100%;
+		height:100%;
+		display:block;
+		object-fit:cover;
+
+
+
+	}
+
+	.slick-slide.slick-center & {
+		opacity:1;
+	}
+
+	.caption {
+		position:absolute;
+		bottom:0;
+		width:100%;
+		background:rgba(255,255,255,.7);
+		padding:.25rem;
+		opacity:0;
+		transition:opacity .5s
+	}
+	&:hover {
+		.caption {
+			opacity:1;
+		}
+	}
+
+
+
+}
+
+#home_hero {
+ @include clearfix();
+ margin: 0 ;
+}
+
+#home_gallery {
+	position:relative;
+
+	@extend .hero-height;
+
+	@media (orientation: portrait) {
+		// height:auto;
+	}
+	z-index:0;
+}
+
