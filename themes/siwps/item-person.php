@@ -13,12 +13,11 @@
 		  if ($the_image['sizes']['large']):
 			
 			
-  		?>
-  		
-  			
-  		  <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"  data-src="<?php echo $the_image['sizes']['large'] ?>" width="<?php echo $the_image['sizes']['medium-width'] ?>"  height="<?php echo $the_image['sizes']['medium-height'] ?>">
+		?>
+		
+		  <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"  data-src="<?php echo $the_image['sizes']['large'] ?>" width="<?php echo $the_image['sizes']['medium-width'] ?>"  height="<?php echo $the_image['sizes']['medium-height'] ?>" alt="<?php echo get_the_title(); ?>">
   		<?php else: ?>
-  		  <img src="/wp-content/themes/siwps/img/whitelogo.png" class="headless">
+  		  <img src="/wp-content/themes/siwps/img/whitelogo.png" class="headless" alt="Placeholder Image>
   		<?php endif; ?>
   
 		</div>

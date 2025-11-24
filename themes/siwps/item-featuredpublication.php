@@ -19,7 +19,11 @@
 					?>
 					
 					
-					<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"  data-src="<?php echo $the_image?>" width="<?php echo $the_image_width ?>" height="<?php echo  $the_image_height ?>">
+					<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+						data-src="<?php echo $the_image; ?>"
+						width="<?php echo $the_image_width; ?>"
+						height="<?php echo $the_image_height; ?>"
+						alt="Book Cover: <?php echo esc_attr(get_the_title()); ?>">
 					
 					
 		<?php else: ?>

@@ -69,12 +69,6 @@
 
 <?php 
 	
-	$meta_query = array(
-		array(
-			'key' => 'type',
-			'value' => $v,
-		)
-	);
 	// Find connected pages
 	$args = array(
 		'post_type' => 'people',
