@@ -2,7 +2,15 @@
 	<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" rel="bookmark">
 
 		<div class="the_date">
-		<?php echo get_the_date( "F d"); ?> 
+		<?php
+		$year = get_the_date('Y');
+		$current_year = date('Y');
+		if ($year == $current_year) {
+			echo get_the_date('F d');
+		} else {
+			echo get_the_date('F d, Y');
+		}
+		?>
 		</div>	
 				
 		

@@ -92,12 +92,13 @@ section.events {
   .the_date {
     text-transform: uppercase;
     background: #8e0f56;
-    padding: 0.25em;
+    padding: 0.25em .5em;
+    border-radius: .25em;
     float: left;
     clear: both;
     font-weight: 400;
     color:#fff;
-    font-size: .85rem;
+    font-size: .65rem;
     margin-bottom:.5rem;
     &.header {
       font-size: inherit;;
@@ -134,9 +135,6 @@ section.events {
     }
     h2 {
       font-size:1rem;
-    }
-    .the_date {
-      font-size:.85rem;
     }
   }
 }

@@ -552,7 +552,7 @@ img {
   right: 10px;
   font-size: 3em;
   z-index: 20000001;
-  color: #6caddf;
+  color: #1D4F91;
   text-decoration: none;
   height: 54px;
   width: 54px;
@@ -596,7 +596,7 @@ img {
 }
 #navmobile ul a {
   text-decoration: none;
-  color: #6caddf;
+  color: #1D4F91;
 }
 #navmobile ul li {
   display: block;
@@ -607,7 +607,7 @@ img {
   height: 50px;
 }
 #navmobile ul li.aktive a {
-  border-bottom: 3px solid #6caddf;
+  border-bottom: 3px solid #1D4F91;
 }
 
 #nav {
@@ -721,7 +721,7 @@ img {
 #nav #search input[type=text] {
   background: #ffffff;
   text-transform: uppercase;
-  color: #6caddf;
+  color: #1D4F91;
   border: none;
   outline: none;
   width: 100px;
@@ -739,7 +739,7 @@ img {
 }
 #nav #search ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #6caddf;
+  color: #1D4F91;
   opacity: 1;
   /* Firefox */
 }
@@ -748,14 +748,14 @@ img {
 }
 #nav #search :-ms-input-placeholder {
   /* Internet Explorer 10-11 */
-  color: #6caddf;
+  color: #1D4F91;
 }
 #nav #search :-ms-input-placeholder :focus {
   color: #999;
 }
 #nav #search ::-ms-input-placeholder {
   /* Microsoft Edge */
-  color: #6caddf;
+  color: #1D4F91;
 }
 #nav #search ::-ms-input-placeholder :focus {
   color: #999;
@@ -1305,12 +1305,13 @@ section.events:after {
 .event .the_date {
   text-transform: uppercase;
   background: #8e0f56;
-  padding: 0.25em;
+  padding: 0.25em 0.5em;
+  border-radius: 0.25em;
   float: left;
   clear: both;
   font-weight: 400;
   color: #fff;
-  font-size: 0.85rem;
+  font-size: 0.65rem;
   margin-bottom: 0.5rem;
 }
 .event .the_date.header {
@@ -1344,9 +1345,6 @@ section.events:after {
 }
 .event.related h2 {
   font-size: 1rem;
-}
-.event.related .the_date {
-  font-size: 0.85rem;
 }
 
 .speakers {
@@ -1451,15 +1449,16 @@ section.events:after {
   font-weight: 300;
 }
 .news .the_date {
-  background: #4a4f10;
-  padding: 0.25em;
+  background: #C75000;
+  padding: 0.25em 0.5em;
   float: left;
   clear: both;
   color: #fff;
   font-weight: 400;
-  font-size: 0.85rem;
+  font-size: 0.65rem;
   text-transform: uppercase;
   margin-bottom: 0.5rem;
+  border-radius: 0.25em;
 }
 .news .thumb {
   width: 100%;
@@ -1485,9 +1484,6 @@ section.events:after {
 }
 .news.related h2 {
   font-size: 1rem;
-}
-.news.related .the_date {
-  font-size: 0.85rem;
 }
 
 .featuredpublications {
@@ -1841,10 +1837,12 @@ section.events:after {
   position: absolute;
   bottom: 0;
   width: 100%;
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(0, 0, 0, 0.7);
   padding: 0.25rem;
   opacity: 0;
   transition: opacity 0.5s;
+  color: #fff;
+  font-size: 0.8rem;
 }
 .slickchild:hover .caption {
   opacity: 1;
@@ -2248,7 +2246,7 @@ a.button {
   transition: all 0.15s;
 }
 .home_email input[type=submit]:hover {
-  background: #6caddf;
+  background: #1D4F91;
   color: #fff;
   width: 30%;
 }

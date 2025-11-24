@@ -57,15 +57,16 @@
   }
 
   .the_date {
-    background: #4a4f10;
-    padding: 0.25em;
+    background: #C75000;
+    padding: 0.25em 0.5em;
     float: left;
     clear: both;
     color: #fff;
     font-weight: 400;
-    font-size: 0.85rem;
+    font-size: 0.65rem;
     text-transform: uppercase;
     margin-bottom: 0.5rem;
+    border-radius: 0.25em;
   }
 
   .thumb {
@@ -97,9 +98,6 @@
     }
     h2 {
       font-size:1rem;
-    }
-    .the_date {
-      font-size:.85rem;
     }
   }
 }

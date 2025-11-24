@@ -55,10 +55,12 @@ position: relative;
 		position:absolute;
 		bottom:0;
 		width:100%;
-		background:rgba(255,255,255,.7);
+		background:rgba(0,0,0,.7);
 		padding:.25rem;
 		opacity:0;
-		transition:opacity .5s
+		transition:opacity .5s;
+		color:#fff;
+		font-size: .8rem;
 	}
 	&:hover {
 		.caption {

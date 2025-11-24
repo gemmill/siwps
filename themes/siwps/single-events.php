@@ -90,7 +90,13 @@ $event_date = strtotime(get_field('event_date'));
 
 	<div class="image_container">
 		<div>
-		<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"  data-src="<?php echo $the_image['sizes'][$the_size] ?>" width="<?php echo $the_image['sizes'][$the_size.'-width'] ?>"  height="<?php echo $the_image['sizes'][$the_size.'-height'] ?>" >
+		<img 
+			src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+			data-src="<?php echo $the_image['sizes'][$the_size] ?>"
+			width="<?php echo $the_image['sizes'][$the_size.'-width'] ?>"
+			height="<?php echo $the_image['sizes'][$the_size.'-height'] ?>"
+			alt="<?php echo !empty($the_image['title']) ? esc_attr($the_image['title']) : esc_attr(get_the_title()); ?>"
+		>
 
 
 		</div>

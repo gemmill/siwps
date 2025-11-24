@@ -28,8 +28,9 @@ $screen-lg-min: 1280px;
 $screen-xl-min: 1440px;
 $max-text-container: 860px;
 
-$nav_blue: #6caddf;
+
 $columbia_blue: #1D4F91;
+$nav_blue: $columbia_blue; //  #6caddf;
 $linkblue: #555555;
 /* #41516c; */
 
