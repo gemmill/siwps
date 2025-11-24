@@ -207,47 +207,27 @@ function strip_specific_tags ($str, $tags) {
 
 
 function format_phone_string( $raw_number ) {
-
-    // remove everything but numbers
+    // Remove all non-digit characters
     $raw_number = preg_replace( '/\D/', '', $raw_number );
 
-    // split each number into an array
-    $arr_number = str_split($raw_number);
-
-    // add a dummy value to the beginning of the array
-    array_unshift( $arr_number, 'dummy' );
-
-    // remove the dummy value so now the array keys start at 1
-    unset($arr_number[0]);
-
-    // get the number of numbers in the number
-    $num_number = count($arr_number);
-
-    // loop through each number backward starting at the end
-    for ( $x = $num_number; $x >= 0; $x-- ) {
-
-        if ( $x === $num_number - 4 ) {
-            // before the fourth to last number
-
-            $phone_number = "-" . $phone_number;
-        }
-        else if ( $x === $num_number - 7 && $num_number > 7 ) {
-            // before the seventh to last number
-            // and only if the number is more than 7 digits
-
-            $phone_number = ") " . $phone_number;
-        }
-        else if ( $x === $num_number - 10 ) {
-            // before the tenth to last number
-
-            $phone_number = "(" . $phone_number;
-        }
-
-        // concatenate each number (possibly with modifications) back on
-        $phone_number = $arr_number[$x] . $phone_number;
+    // Format based on length (assume US numbers)
+    if ( strlen( $raw_number ) === 10 ) {
+        // (123) 456-7890
+        return sprintf( '(%s) %s-%s',
+            substr( $raw_number, 0, 3 ),
+            substr( $raw_number, 3, 3 ),
+            substr( $raw_number, 6, 4 )
+        );
+    } elseif ( strlen( $raw_number ) === 7 ) {
+        // 456-7890
+        return sprintf( '%s-%s',
+            substr( $raw_number, 0, 3 ),
+            substr( $raw_number, 3, 4 )
+        );
+    } else {
+        // Return as-is if not 7 or 10 digits
+        return $raw_number;
     }
-
-    return $phone_number;
 }
 
 
