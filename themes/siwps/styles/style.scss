@@ -11,6 +11,15 @@ Tags:
 
 */
 
+.screen-reader-text {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
 $grid-columns: 12;
 $grid-gutter-width: 2rem;
 $screen-sm-min: 640px;
