@@ -22,7 +22,7 @@ $the_size = "gallery";
 
 			<div class="subtitle meta">
 			<?php global $post;
-			$parent_id= wp_get_post_parent_id( $post->post->ID );
+			$parent_id= wp_get_post_parent_id( $post->ID );
 			if ($parent_id) echo '<a href="'.get_permalink($post->post_parent).'">'.get_the_title($parent_id ).'</a>';
 ?>
 			</div>
@@ -32,7 +32,13 @@ $the_size = "gallery";
 
 	<div class="image_container landscape">
 		<div>
-		<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"  data-src="<?php echo $the_image['sizes'][$the_size] ?>" width="<?php echo $the_image['sizes'][$the_size.'-width'] ?>"  height="<?php echo $the_image['sizes'][$the_size.'-height'] ?>" >
+		<img 
+			src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"  
+			data-src="<?php echo esc_url($the_image['sizes'][$the_size]); ?>" 
+			width="<?php echo esc_attr($the_image['sizes'][$the_size.'-width']); ?>"  
+			height="<?php echo esc_attr($the_image['sizes'][$the_size.'-height']); ?>" 
+			alt="<?php echo esc_attr($the_image['title']); ?>"
+		>
 
 
 		</div>
