@@ -1,7 +1,6 @@
 
 <?php
-	
-	$pp = $_GET['pp'];
+	$pp = isset($_GET['pp']) ? $_GET['pp'] : 0;
 	settype($pp,"int");
 	
 	$ppp = 12;

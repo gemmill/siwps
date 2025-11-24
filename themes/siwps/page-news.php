@@ -16,7 +16,7 @@
 
 <?php
 	
-	$pp = $_GET['pp'];
+	$pp = isset($_GET['pp']) ? intval($_GET['pp']) : 0;
 	settype($pp,"int");
 	
 	$ppp = 24;

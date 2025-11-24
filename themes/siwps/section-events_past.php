@@ -3,7 +3,7 @@
 
 
   // set the page	
-	$pp = $_GET['pp'];
+	$pp = isset($_GET['pp']) ? intval($_GET['pp']) : 0;
 	settype($pp,"int");
 	if ($pp > 0) $pp = $pp-1;
 	
