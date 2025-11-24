@@ -1,5 +1,6 @@
 <?php 
-$the_image = get_field('gallery')[0];  
+$gallery = get_field('gallery');
+$the_image = !empty($gallery) ? $gallery[0] : null;
 $the_size = "large";
 ?>
 <?php get_header(); ?>
