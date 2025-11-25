@@ -12,16 +12,6 @@ Tags:
 
 */
 @import url("https://use.typekit.net/rrk3yoc.css");
-.screen-reader-text {
-  position: absolute;
-  left: -10000px;
-  top: auto;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-}
-
-/* #41516c; */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Set default font family to sans-serif.
@@ -414,138 +404,6 @@ img {
   box-sizing: border-box;
 }
 
-html {
-  font-size: 16px;
-}
-@media (min-width: 1280px) {
-  html {
-    font-size: 1.25vw;
-  }
-}
-@media (min-width: 1600px) {
-  html {
-    font-size: 20px;
-  }
-}
-
-a {
-  color: #555555;
-}
-
-h1,
-h2 {
-  font-family: "proxima-nova", helvetica, sans-serif;
-  font-weight: 400;
-}
-
-h3,
-h4,
-h5,
-h6 {
-  font-family: "proxima-nova", helvetica, sans-serif;
-  font-weight: 500;
-}
-
-h2.single {
-  margin: 0 0 0.5em 0;
-  background: #fff;
-  padding: 0;
-  font-size: 2rem;
-  line-height: 1;
-}
-h2.single.people {
-  padding-bottom: 0;
-  margin-top: 10px;
-}
-
-h3 {
-  letter-spacing: 0.25px;
-  font-size: 1.25rem;
-  font-family: "proxima-nova", helvetica, sans-serif;
-  margin: 0;
-}
-h3 a {
-  color: #000;
-}
-h3 a:hover {
-  text-decoration: underline;
-}
-
-h4 {
-  letter-spacing: 0.25px;
-}
-h4.section {
-  color: #1D4F91;
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  margin-bottom: 0.5em;
-  margin-top: 1.5em;
-  clear: both;
-  padding: 0 1rem;
-}
-h4.section:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-h4.section.sidebar {
-  font-size: 1.25rem;
-  padding-left: 0;
-}
-
-a {
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-}
-.items a {
-  color: inherit;
-}
-.items a:hover {
-  text-decoration: none;
-}
-
-body {
-  font-family: "proxima-nova", helvetica, sans-serif;
-  font-weight: 300;
-  padding: 0;
-  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#eeeeee+0,dddddd+100 */
-  background: #eeeeee; /* Old browsers */
-  background: -moz-linear-gradient(top, #eeeeee 0%, #dddddd 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #eeeeee 0%, #dddddd 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #eeeeee 0%, #dddddd 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#eeeeee", endColorstr="#dddddd",GradientType=0 ); /* IE6-9 */
-}
-
-.bodycopy, .bio {
-  font-family: "adobe-garamond-pro", "Garamond", serif;
-  max-width: 40em;
-  font-size: 1.2rem;
-  color: hsl(60, 17%, 20%);
-  line-height: 1.45;
-}
-
-#logo {
-  padding: 20px 2rem 0px 2rem;
-  background: #fff;
-  max-width: 1600px;
-  margin: 0 auto;
-}
-@media (min-width: 1600px) {
-  #logo {
-    margin-top: 1rem;
-    border-top-left-radius: 0.5rem;
-    border-top-right-radius: 0.5rem;
-  }
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  margin: 0;
-}
-
 #navmobiletoggle {
   position: fixed;
   top: 10px;
@@ -760,155 +618,18 @@ img {
 #nav #search ::-ms-input-placeholder :focus {
   color: #999;
 }
-.title-header {
-  margin-bottom: 2em;
-  position: relative;
-  float: left;
-  width: 100%;
-  min-height: 1px;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  position: relative;
-  min-height: 1px;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-@media (min-width: 1280px) {
-  .title-header {
-    float: left;
-    width: 75%;
-  }
-}
-.title-header.people {
-  margin-top: 0;
-}
+/*
+Theme Name: SIWPS
+Theme URI: xyz
+Author: AAG
+Author URI: http://aarongemmill.com/
+Description: SIWPS
+Version: 4.0.4
+License: GNU General Public License
+License URI: https://www.gnu.org/licenses/gpl.html
+Tags: 
 
-#contents {
-  max-width: 1600px;
-  margin: 0 auto;
-  background: #fff;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-  min-height: calc(100vh - 100px);
-  padding-bottom: 3rem;
-}
-@media (min-width: 640px) {
-  #contents {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-#contents:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-#contents .main-content {
-  position: relative;
-  float: left;
-  width: 100%;
-  min-height: 1px;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-#contents .main-content.single {
-  position: relative;
-  min-height: 1px;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  font-size: 1.11rem;
-  padding: 2rem;
-}
-@media (min-width: 768px) {
-  #contents .main-content.single {
-    float: left;
-    width: 66.6666666667%;
-  }
-}
-#contents .main-content.single p a {
-  color: #555555;
-  text-decoration: underline;
-}
-#contents .main-content.nosub {
-  padding-top: 2rem;
-}
-#contents .sub-content {
-  position: relative;
-  float: left;
-  width: 100%;
-  min-height: 1px;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  position: relative;
-  min-height: 1px;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  display: none;
-}
-@media (min-width: 768px) {
-  #contents .sub-content {
-    float: left;
-    width: 25%;
-  }
-}
-#contents .sub-content.home {
-  position: relative;
-  min-height: 1px;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-@media (min-width: 1280px) {
-  #contents .sub-content.home {
-    float: left;
-    width: 100%;
-  }
-}
-@media (min-width: 1280px) {
-  #contents .sub-content {
-    display: block;
-  }
-}
-#contents .sub-content .items {
-  font-size: 0.85rem;
-  margin-bottom: 2rem;
-}
-#contents .sub-content .items:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-#contents .sub-content a:hover img {
-  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
-}
-
-#content {
-  margin: 0;
-}
-
-.subheader {
-  font-size: 0.7em;
-  text-transform: uppercase;
-  font-family: "proxima-nova", helvetica, sans-serif;
-  font-weight: 400;
-}
-
-.single .date,
-.single .add,
-.single .location {
-  font-size: 0.75rem !important;
-}
-.single .add {
-  margin-left: 1em;
-}
-.single .add::before {
-  padding-left: 5px !important;
-  padding-right: 5px !important;
-  font-size: 0.75rem;
-}
-
+*/
 .personrow {
   position: relative;
   float: left;
@@ -1169,6 +890,18 @@ img {
   background-color: hsl(60, 17%, 95%);
 }
 
+/*
+Theme Name: SIWPS
+Theme URI: xyz
+Author: AAG
+Author URI: http://aarongemmill.com/
+Description: SIWPS
+Version: 4.0.4
+License: GNU General Public License
+License URI: https://www.gnu.org/licenses/gpl.html
+Tags: 
+
+*/
 section.events:after {
   content: "";
   display: table;
@@ -1356,6 +1089,18 @@ section.events:after {
   margin-top: 0.5em;
 }
 
+/*
+Theme Name: SIWPS
+Theme URI: xyz
+Author: AAG
+Author URI: http://aarongemmill.com/
+Description: SIWPS
+Version: 4.0.4
+License: GNU General Public License
+License URI: https://www.gnu.org/licenses/gpl.html
+Tags: 
+
+*/
 .news_home:after {
   content: "";
   display: table;
@@ -1491,6 +1236,18 @@ section.events:after {
   font-size: 1rem;
 }
 
+/*
+Theme Name: SIWPS
+Theme URI: xyz
+Author: AAG
+Author URI: http://aarongemmill.com/
+Description: SIWPS
+Version: 4.0.4
+License: GNU General Public License
+License URI: https://www.gnu.org/licenses/gpl.html
+Tags: 
+
+*/
 .featuredpublications {
   padding: 0 2rem;
   margin: 0;
@@ -1634,6 +1391,18 @@ section.events:after {
   background-color: hsl(60, 17%, 95%);
 }
 
+/*
+Theme Name: SIWPS
+Theme URI: xyz
+Author: AAG
+Author URI: http://aarongemmill.com/
+Description: SIWPS
+Version: 4.0.4
+License: GNU General Public License
+License URI: https://www.gnu.org/licenses/gpl.html
+Tags: 
+
+*/
 .pageitem {
   position: relative;
   float: left;
@@ -1796,6 +1565,18 @@ section.events:after {
   display: none;
 }
 
+/*
+Theme Name: SIWPS
+Theme URI: xyz
+Author: AAG
+Author URI: http://aarongemmill.com/
+Description: SIWPS
+Version: 4.0.4
+License: GNU General Public License
+License URI: https://www.gnu.org/licenses/gpl.html
+Tags: 
+
+*/
 .hero-height, #home_gallery, .slickchild, .slick-slide, .slick {
   height: 40vh;
 }
@@ -1876,6 +1657,296 @@ section.events:after {
 }
 .list.fade-in-element {
   animation: fade-in 0.75s;
+}
+
+.screen-reader-text {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+html {
+  font-size: 16px;
+}
+@media (min-width: 1280px) {
+  html {
+    font-size: 1.25vw;
+  }
+}
+@media (min-width: 1600px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+a {
+  color: #555555;
+}
+
+h1,
+h2 {
+  font-family: "proxima-nova", helvetica, sans-serif;
+  font-weight: 400;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-family: "proxima-nova", helvetica, sans-serif;
+  font-weight: 500;
+}
+
+h2.single {
+  margin: 0 0 0.5em 0;
+  background: #fff;
+  padding: 0;
+  font-size: 2rem;
+  line-height: 1;
+}
+h2.single.people {
+  padding-bottom: 0;
+  margin-top: 10px;
+}
+
+h3 {
+  letter-spacing: 0.25px;
+  font-size: 1.25rem;
+  font-family: "proxima-nova", helvetica, sans-serif;
+  margin: 0;
+}
+h3 a {
+  color: #000;
+}
+h3 a:hover {
+  text-decoration: underline;
+}
+
+h4 {
+  letter-spacing: 0.25px;
+}
+h4.section {
+  color: #1D4F91;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin-bottom: 0.5em;
+  margin-top: 1.5em;
+  clear: both;
+  padding: 0 1rem;
+}
+h4.section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+h4.section.sidebar {
+  font-size: 1.25rem;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.items a {
+  color: inherit;
+}
+.items a:hover {
+  text-decoration: none;
+}
+
+body {
+  font-family: "proxima-nova", helvetica, sans-serif;
+  font-weight: 300;
+  padding: 0;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#eeeeee+0,dddddd+100 */
+  background: #eeeeee; /* Old browsers */
+  background: -moz-linear-gradient(top, #eeeeee 0%, #dddddd 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #eeeeee 0%, #dddddd 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #eeeeee 0%, #dddddd 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#eeeeee", endColorstr="#dddddd",GradientType=0 ); /* IE6-9 */
+}
+
+.bodycopy {
+  font-family: "adobe-garamond-pro", "Garamond", serif;
+  max-width: 40em;
+  font-size: 1.2rem;
+  color: hsl(60, 17%, 20%);
+  line-height: 1.45;
+}
+
+#logo {
+  padding: 20px 2rem 0px 2rem;
+  background: #fff;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+@media (min-width: 1600px) {
+  #logo {
+    margin-top: 1rem;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.title-header {
+  margin-bottom: 2em;
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  position: relative;
+  min-height: 1px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+@media (min-width: 1280px) {
+  .title-header {
+    float: left;
+    width: 75%;
+  }
+}
+.title-header.people {
+  margin-top: 0;
+}
+
+#contents {
+  max-width: 1600px;
+  margin: 0 auto;
+  background: #fff;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  min-height: calc(100vh - 100px);
+  padding-bottom: 3rem;
+}
+@media (min-width: 640px) {
+  #contents {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+#contents:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#contents .main-content {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+#contents .main-content.single {
+  position: relative;
+  min-height: 1px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 1.11rem;
+  padding: 2rem;
+}
+@media (min-width: 768px) {
+  #contents .main-content.single {
+    float: left;
+    width: 66.6666666667%;
+  }
+}
+#contents .main-content.single p a {
+  color: #555555;
+  text-decoration: underline;
+}
+#contents .main-content.nosub {
+  padding-top: 2rem;
+}
+#contents .sub-content {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  position: relative;
+  min-height: 1px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: none;
+}
+@media (min-width: 768px) {
+  #contents .sub-content {
+    float: left;
+    width: 25%;
+  }
+}
+#contents .sub-content.home {
+  position: relative;
+  min-height: 1px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+@media (min-width: 1280px) {
+  #contents .sub-content.home {
+    float: left;
+    width: 100%;
+  }
+}
+@media (min-width: 1280px) {
+  #contents .sub-content {
+    display: block;
+  }
+}
+#contents .sub-content .items {
+  font-size: 0.85rem;
+  margin-bottom: 2rem;
+}
+#contents .sub-content .items:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#contents .sub-content a:hover img {
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+#content {
+  margin: 0;
+}
+
+.subheader {
+  font-size: 0.7em;
+  text-transform: uppercase;
+  font-family: "proxima-nova", helvetica, sans-serif;
+  font-weight: 400;
+}
+
+.single .date,
+.single .add,
+.single .location {
+  font-size: 0.75rem !important;
+}
+.single .add {
+  margin-left: 1em;
+}
+.single .add::before {
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+  font-size: 0.75rem;
 }
 
 .single_header {

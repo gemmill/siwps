@@ -1,3 +1,5 @@
+@use "grid" as *;
+@use "bs" as *;
 .featuredpublications {
   @include clearfix();
   padding:0 2rem;

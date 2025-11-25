@@ -1,3 +1,6 @@
+@use "bs" as *;
+@use "grid" as *;
+
 .personrow {
   @include make-xs-column(12);
 }
@@ -7,10 +10,7 @@
   @include make-xs-column(12);
 }
 
-.bio {
-  @extend .bodycopy;
 
-}
 
 .person {
   @include make-xs-column(12);

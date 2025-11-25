@@ -86,7 +86,7 @@
 					
 
 
-			<div class="bio">		
+			<div class="bodycopy">		
 			<?php the_content( ); ?>
 			</div>
 				

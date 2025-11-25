@@ -10,6 +10,19 @@ License URI: https://www.gnu.org/licenses/gpl.html
 Tags: 
 
 */
+@use "grid" as *;
+@use "bs" as *;
+@use "nav" as *;
+@use "person" as *;
+@use "event" as *;
+@use "news" as *;
+@use "publication" as *;
+@use "pages" as *;
+@use "slick" as *;
+@use "slick_siwps" as *;
+@use "animate" as *;
+@use "color" as *;
+@use "font" as *;
 
 .screen-reader-text {
   position: absolute;
@@ -20,27 +33,10 @@ Tags:
   overflow: hidden;
 }
 
-$grid-columns: 12;
-$grid-gutter-width: 2rem;
-$screen-sm-min: 640px;
-$screen-md-min: 768px;
-$screen-lg-min: 1280px;
-$screen-xl-min: 1440px;
-$max-text-container: 860px;
 
 
-$columbia_blue: #1D4F91;
-$nav_blue: $columbia_blue; //  #6caddf;
-$linkblue: #555555;
-$highlight-color: #C75000;
-/* #41516c; */
 
 @import url("https://use.typekit.net/rrk3yoc.css");
-
-@import "bs";
-
-$serif: "adobe-garamond-pro", "Garamond", serif;
-$sans: "proxima-nova", helvetica, sans-serif;
 
 html {
   font-size: 16px;
@@ -180,7 +176,6 @@ img {
   margin: 0;
 }
 
-@import "nav";
 
 .title-header {
   margin-bottom: 2em;
@@ -279,14 +274,6 @@ img {
   }
 }
 
-@import "person";
-@import "event";
-@import "news";
-@import "publication";
-@import "pages";
-@import "slick";
-@import "slick_siwps";
-@import "animate";
 
 .single_header {
   @include clearfix();
@@ -652,7 +639,7 @@ a.button {
     transition: all 0.15s;
 
     &:hover {
-      background: $nav_blue;
+      background: $columbia_blue;
       color: #fff;
       width: 30%;
     }
