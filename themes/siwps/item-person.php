@@ -10,7 +10,7 @@
 		  
 		
 
-		  if ($the_image['sizes']['large']):
+		  if (isset($the_image['sizes']['large'])):
 			
 			
 		?>

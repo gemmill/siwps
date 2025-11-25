@@ -10,8 +10,6 @@
   @include make-xs-column(12);
 }
 
-
-
 .person {
   @include make-xs-column(12);
   @include make-sm-column(6);
@@ -19,11 +17,9 @@
   @include make-lg-column(3);
   @include clearfix();
 
-
-
   padding-bottom: 1em;
   //font-family: $serif;
-
+  margin-bottom: 1em;
   @media (min-width: $screen-sm-min) {
     &:nth-child(2n + 1) {
       clear: left;
@@ -68,9 +64,8 @@
   }
 
   h3 {
-    margin-top: .5em;
+    margin-top: 0.5em;
   }
-  margin-bottom: 1em;
 
   .thumb {
     padding-top: 100%;
@@ -94,30 +89,29 @@
     }
   }
 
-&.search {
+  &.search {
+    .thumbholder {
+      float: left;
+      width: 25%;
+      padding-right: 1rem;
+    }
 
-  .thumbholder {
-    float:left;
-    width:25%;
-    padding-right:1rem;
-  }
+    .info {
+      width: 75%;
+      float: left;
 
-  .info {
-    width:75%;
-    float:left;
-
-    h3 {
-      margin:0;
+      h3 {
+        margin: 0;
+      }
     }
   }
-}
 
   .info {
     font-size: 1rem;
   }
 
   h3 {
-    font-size:1em;
+    font-size: 1em;
   }
 }
 
@@ -130,8 +124,6 @@
 
   padding-bottom: 0.5em;
   //font-family: $serif;
-
-
 
   h3 {
     font-size: 1rem;
@@ -178,11 +170,11 @@
   }
 }
 
-
 .related.people {
-  font-size:1rem;
-  h3 {font-size:inherit;}
-
+  font-size: 1rem;
+  h3 {
+    font-size: inherit;
+  }
 
   a {
     @include clearfix();
