@@ -1,6 +1,7 @@
 @use "font" as *;
 @use "grid" as *;
 @use "bs" as *;
+@use "sass:math";
 
 .pageitem {
 	@include make-xs-column (12);
@@ -43,8 +44,8 @@
 
 		border-radius: 0.5em;
 		display: block;
-		margin-left: -$grid-gutter-width/2;
-		margin-right: -$grid-gutter-width/2;
+		margin-left: math.div(-$grid-gutter-width, 2);
+		margin-right: math.div(-$grid-gutter-width, 2);
 		margin-top: 0;
 		margin-bottom: 0;
 		padding: $grid-gutter-width/2;
