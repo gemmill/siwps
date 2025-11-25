@@ -98,9 +98,9 @@
 
   &.related {
     a {
-      padding: $grid-gutter-width/4;
-      margin-left: -$grid-gutter-width/4;
-      margin-right: -$grid-gutter-width/4;
+      padding: math.div($grid-gutter-width, 4);
+      margin-left: math.div(-$grid-gutter-width, 4);
+      margin-right: math.div(-$grid-gutter-width, 4);
     }
     h2 {
       font-size:1rem;

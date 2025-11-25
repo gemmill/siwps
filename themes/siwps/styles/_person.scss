@@ -188,11 +188,11 @@
     @include clearfix();
     border-radius: 0.25em;
     display: block;
-    margin-left: -$grid-gutter-width/4;
-    margin-right: -$grid-gutter-width/4;
+    margin-left: math.div(-$grid-gutter-width, 4);
+    margin-right: math.div(-$grid-gutter-width, 4);
     margin-top: 0;
     margin-bottom: 0;
-    padding: $grid-gutter-width/4;
+    padding: math.div($grid-gutter-width, 4);
     text-decoration: none;
     transition: background-color 0.75s;
 

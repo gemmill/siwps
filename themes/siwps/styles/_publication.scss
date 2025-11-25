@@ -88,8 +88,8 @@
     transition: background-color .75s;
     border-radius: 0.5em;
     display: block;
-    margin: 0 (-$grid-gutter-width / 2);
-    padding: (-$grid-gutter-width / 2);
+    margin: 0 (math.div(-$grid-gutter-width, 2));
+    padding: (math.div(-$grid-gutter-width, 2));
     text-decoration: none;
     &:hover {
       background-color: hsl(60, 17%, 95%);
