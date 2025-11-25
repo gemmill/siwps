@@ -516,7 +516,7 @@ a.button {
 .deliverables {
   font-size: 1rem;
   margin-bottom: 1em;
-  padding-left:$grid-gutter-width/2;
+  padding-left:math.div($grid-gutter-width, 2);
   a {
     font-weight: 400;
   }
@@ -737,7 +737,7 @@ a.button {
 .pager {
   @include clearfix();
   text-align: center;
-  padding:3rem $grid-gutter-width/2;
+  padding:3rem math.div($grid-gutter-width, 2);
   color:#555;
   a {
     font-weight:400;
