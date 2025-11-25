@@ -17,9 +17,9 @@ $nav_height:50px;
     background:none;
 
     line-height: 54px;
-    text-indent: -9999px;
     overflow: hidden;
     white-space: nowrap;
+    display: block;
 
     @media (min-width: $screen-lg-min) {
         display: none;
@@ -191,7 +191,7 @@ $nav_height:50px;
 
         display: none;
 
-        @media (min-width: $screen-xl-min - 200) {
+        @media (min-width: ($screen-xl-min - 200)) {
             display: block;
         }
 

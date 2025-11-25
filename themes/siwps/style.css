@@ -417,9 +417,9 @@ img {
   border: none;
   background: none;
   line-height: 54px;
-  text-indent: -9999px;
   overflow: hidden;
   white-space: nowrap;
+  display: block;
 }
 @media (min-width: 1280px) {
   #navmobiletoggle {
@@ -1190,6 +1190,7 @@ Tags:
 }
 .news a:hover {
   background-color: hsl(60, 17%, 95%);
+  text-decoration: none;
 }
 .news h2 {
   font-size: 1.2rem;
