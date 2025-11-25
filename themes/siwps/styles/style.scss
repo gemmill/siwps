@@ -649,43 +649,21 @@ a.button {
 }
 
 #home_info {
-  background: #555; // hsl(60, 17%, 20%);
-  box-shadow: inset 0px -11px 8px -10px rgba(0, 0, 0, 0.3);
-  @include clearfix();
+  display: flex;
+  gap: math.div($grid-gutter-width, 2);
+  padding: math.div($grid-gutter-width, 2);
 
-  @media (min-width: $screen-md-min) {
-    /* position:absolute;
-		bottom: -2rem;
-		left:0;*/
+  > * {
+    flex: 1 1 0;
+    min-width: 0;
 
-    z-index: 999999999999999;
-    display: flex;
   }
 
   .tab {
-    @include make-md-column(7);
-    @include make-lg-column(8);
-    box-shadow: inset 0px -11px 8px -10px rgba(0, 0, 0, 0.05);
-    font-family: $sans;
-    font-weight: 300;
-    line-height: 1.4;
-
     background: hsl(60, 17%, 90%);
     color: hsl(60, 17%, 20%);
-
-    float: none;
-    font-size: 1.2rem;
-    padding: 1rem;
-    @media (min-width: $screen-md-min) {
-      font-size: 1.4rem;
-      padding: 2rem;
-    }
-
-    p {
-      margin: 0;
-    }
-
-    //box-shadow: 0 5px 5px rgba(0,0,0,.6);
+    padding: math.div($grid-gutter-width, 2);
+    border-radius: math.div($grid-gutter-width, 4);
   }
 }
 
