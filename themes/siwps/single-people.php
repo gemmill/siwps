@@ -56,7 +56,10 @@
 		?>
 		
 			
-		<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="<?php echo $the_image['sizes']['gallery'] ?>" width="<?php echo $the_image['sizes']['medium-width'] ?>"  height="<?php echo $the_image['sizes']['medium-height'] ?>">
+		<?php
+			$alt_text = !empty($the_image['title']) ? $the_image['title'] : get_the_title();
+		?>
+		<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="<?php echo $the_image['sizes']['gallery'] ?>" width="<?php echo $the_image['sizes']['medium-width'] ?>" height="<?php echo $the_image['sizes']['medium-height'] ?>" alt="<?php echo esc_attr($alt_text); ?>">
 		<?php endif; ?>
 
 		</div>

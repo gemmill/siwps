@@ -87,11 +87,16 @@ section.events {
 
     font-family: $sans;
     margin-bottom:-.5rem;
+    .the_date {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    }
   }
 
   .the_date {
     text-transform: uppercase;
-    background: #8e0f56;
+    background: $highlight-color;
     padding: 0.25em .5em;
     border-radius: .25em;
     float: left;

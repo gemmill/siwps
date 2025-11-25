@@ -644,7 +644,7 @@ img {
   display: block;
   float: left;
   margin: 0;
-  font-size: 20px;
+  font-size: 0.85rem;
   text-transform: uppercase;
   text-decoration: none;
   padding: 15px 10px 0 10px;
@@ -702,7 +702,7 @@ img {
   float: left;
 }
 #nav #search input {
-  font-size: 20px;
+  font-size: 0.85rem;
   padding: 15px 0.2em 10px 0.2em;
   margin: 0.1em 0.2em;
   /* the following ensures they're all using the same box-model for rendering */
@@ -1302,9 +1302,14 @@ section.events:after {
   font-family: "proxima-nova", helvetica, sans-serif;
   margin-bottom: -0.5rem;
 }
+.event .datebox .the_date {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
 .event .the_date {
   text-transform: uppercase;
-  background: #8e0f56;
+  background: #C75000;
   padding: 0.25em 0.5em;
   border-radius: 0.25em;
   float: left;

@@ -1,6 +1,6 @@
 <div id="post-<?php the_ID(); ?>" class="detail citation">
 		<div class="documenticon">
-			<img src="<?php echo get_template_directory_uri(); ?>/img/document.svg" width="70" height="auto">	
+			<img src="<?php echo get_template_directory_uri(); ?>/img/document.svg" width="70" height="auto" alt="" aria-hidden="true" role="presentation">	
 			<?php 	if (user_can( wp_get_current_user(), 'administrator' )) edit_post_link('edit'); ?>	
 		</div>
 				
