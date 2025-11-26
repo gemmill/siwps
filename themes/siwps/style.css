@@ -2342,6 +2342,14 @@ a.button {
   color: hsl(60, 17%, 20%);
   padding: 1rem;
   border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+#home_info h2 {
+  font-size: 1.2rem;
+  margin: 0;
+  margin-bottom: 0.5em;
 }
 
 #mce-responses {

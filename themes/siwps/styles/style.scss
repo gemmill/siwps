@@ -664,6 +664,15 @@ a.button {
     color: hsl(60, 17%, 20%);
     padding: math.div($grid-gutter-width, 2);
     border-radius: math.div($grid-gutter-width, 4);
+    display: flex;
+    flex-direction: column;
+    gap: math.div($grid-gutter-width, 2);
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    margin:0;
+    margin-bottom: 0.5em;
   }
 }
 

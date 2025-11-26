@@ -13,8 +13,8 @@
 
 
 <?php if (get_field("notice")): ?>
-<div class="alert">
-<a class="close" href="#">&times;</a>
+<div class="alert" aria-role="alert">
+
 <?php echo get_field("notice") ?>
 
 </div>
